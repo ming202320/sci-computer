@@ -5,12 +5,12 @@
 
 
 ## 1. Overview
-This project simulates and visualizes three artificial stock prices over a 10-day period using Python. The purpose is to demonstrate data manipulation, visualization, and analysis techniques comparable to what we previously learned using R. NumPy was used for random number generation and vectorization, pandas for data reshaping and summarization, and Matplotlib for visualization.
+This project simulates and visualizes three artificial stock prices over a 10-day period using Python. The purpose is to demonstrate data manipulation, visualization, and analysis techniques comparable to what we previously learned using R studio. NumPy was used for random number generation and vectorization, pandas for data reshaping and summarization, and Matplotlib for visualization.
 
 
 
 ## 2. Code Example and Output
-From our class, we learned how to create random datasets and reshape them using `pivot_longer()` and `pivot_wider()` in R. In Python, these operations are achieved using `pd.melt()` and `DataFrame.pivot()`.
+From this class, I learned how to create random datasets and reshape them using `pivot_longer()` and `pivot_wider()` in R. In Python, these operations are achieved using `pd.melt()` and `DataFrame.pivot()`.
 
 Below is a summary of the minimum and maximum prices per stock:
 
