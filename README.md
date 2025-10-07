@@ -79,7 +79,7 @@ These results show a clear difference in volatility. In line with my expectation
 Simulation datasets can be extended to real-world applications. For example, using APIs to extract real financial data. Once the historical data is downloaded, the same analysis methods (changing charts, aggregations, and plots) can be applied to study the trend of stocks, compare them, and calculate averages.
 
 
-## 7. Reflecti9on and Comparison to R
+## 7. Reflection and Comparison to R
 In R, the workflow relied on:
 -pivot_longer() / pivot_wider() from tidyr,
 -group_by() and summarize() from dplyr,
