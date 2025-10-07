@@ -81,14 +81,14 @@ Simulation datasets can be extended to real-world applications. For example, usi
 
 ## 7. Reflecti9on and Comparison to R
 In R, the workflow relied on:
-**pivot_longer() / pivot_wider() from tidyr,
-**group_by() and summarize() from dplyr,
-**geom_line() and theme_classic() from ggplot2.
+-pivot_longer() / pivot_wider() from tidyr,
+-group_by() and summarize() from dplyr,
+-geom_line() and theme_classic() from ggplot2.
 
 Python provides parallel functions:
-**pd.melt() and pivot() for reshaping,
-**groupby() and agg() for summarizing,
-**matplotlib.pyplot for visualization.
+-pd.melt() and pivot() for reshaping,
+-groupby() and agg() for summarizing,
+-matplotlib.pyplot for visualization.
 Both languages embody the same data science principles: tidy data, vectorized operations, and reproducibility.
 
 
