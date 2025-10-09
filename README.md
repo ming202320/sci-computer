@@ -83,7 +83,7 @@ Stock z (green) varies even more dramatically, with sharp increases and decrease
 
 In a financial setting, such as a visualization helps identify which assets move together or independently, whether correlations exist between stocks, and how volatility behaves over time. Visual inspection often reveals patterns that summary tables alone cannot, such as trends, anomalies, or cyclical behavior. Even though this dataset contains only ten days, the same method could scale to years of historical financial data or millions of observations without changing the basic logic.
 
-The ability to generate, style, and interpret line plots is essential for analysts. Matplotlib allows additional customization such as color palettes, interactive zooming, and annotation of key points, all of which enhance clarity and storytelling. Matplotlib’s flexibility enables a lot of features, making it both a scientific tool and a medium for persuasive communication. Matplotlib’s value extends beyond generating figures; it supports storytelling with data. A well-designed visualization communicates insights intuitively. In R, a similar graph might be created using ggplot2, which follows a declarative “grammar of graphics” model. Matplotlib’s design philosophy differs — it’s more procedural, giving users precise control over every component of the figure. This means that while it may require more explicit code, it also offers more customization. 
+The ability to generate, style, and interpret line plots is essential for analysts. Matplotlib allows additional customization such as color palettes, interactive zooming, and annotation of key points, all of which enhance clarity and storytelling. Matplotlib’s flexibility enables a lot of features, making it both a scientific tool and a medium for persuasive communication. Matplotlib’s value extends beyond generating figures; it supports storytelling with data. A well-designed visualization communicates insights intuitively. In R, a similar graph might be created using ggplot2, which follows a declarative “grammar of graphics” model. Matplotlib’s design philosophy differs. It’s more procedural, giving users precise control over every component of the figure. This means that while it may require more explicit code, it also offers more customization. 
 
 ## 3. pandas DataFrame and Summary
 After visualizing the data, the next task is to compute descriptive statistics. The pandas groupby() method provides a simple yet powerful way to summarize values by category. In this case, each stock is treated as a separate group, and several aggregate functions—minimum, maximum, mean, and standard deviation—are applied.
@@ -136,19 +136,19 @@ Stocks y and z have wider ranges (roughly ±6 units around the mean), demonstrat
 
 Standard deviation values align with the initial random generation parameters: around 1 for x and 4 for y and z.
 
-Such summaries can guide decision-making. Investors might prefer low-volatility assets when risk aversion is high, while others might seek higher-variance stocks for potential greater returns. In professional data workflows, this type of summary is often extended with measures like median, percentiles, or confidence intervals, all of which pandas can compute efficiently.
+Such summaries can guide decision making. Investors might prefer low volatility assets when risk aversion is high, while others might seek higher variance stocks for potential greater returns. In professional data workflows, this type of summary is often extended with measures like median, percentiles, or confidence intervals, all of which pandas can compute efficiently.
 
 ```{python}
 summary = stocksL.groupby("stock")["price"].agg(["min", "max"]).reset_index()
 print(summary.to_markdown())
 ```
-Beyond descriptive statistics, pandas offers a robust analytical framework that integrates seamlessly with other scientific libraries. Pandas structures and summarizes the data. Matplotlib transforms that structured data into insight-rich visuals. Statistical reasoning interprets both the numeric and visual outputs.
+Beyond descriptive statistics, pandas offers a robust analytical framework that integrates seamlessly with other scientific libraries. Pandas structures and summarizes the data. Matplotlib transforms that structured data into insight rich visuals. Statistical reasoning interprets both the numeric and visual outputs.
 ## 4. Additional Application 
 
 Although the dataset represents stock prices, the same workflow applies to a lot of other domains and fields. Python’s flexibility makes it suitable for any field requiring data generation, transformation, visualization, and interpretation.
 
 1. Environmental Science
-Scientists studying climate change might monitor temperature, humidity, and precipitation over time at multiple weather stations. By melting melt() the data from wide to long format, they could plot multiple stations on a single chart to compare patterns or identify anomalies such as heatwaves or unusual rainfall events. The summary statistics would reveal which regions exhibit the greatest variability, informing predictive models or early-warning systems.
+Scientists studying climate change might monitor temperature, humidity, and precipitation over time at multiple weather stations. By melting melt() the data from wide to long format, they could plot multiple stations on a single chart to compare patterns or identify anomalies such as heatwaves or unusual rainfall events. The summary statistics would reveal which regions exhibit the greatest variability, informing predictive models or early warning systems.
 
 2. Healthcare Analytics
 In a clinical study and health study, researchers could record patient vitals, such as blood pressure, glucose levels, or heart rate across several days or weeks. The same visualization technique can help identify whether treatments lead to measurable improvements over time. A stable “stock like” line might indicate a controlled condition, while sharp swings could suggest instability or response to intervention.
