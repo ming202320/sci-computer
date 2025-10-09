@@ -70,6 +70,9 @@ plt.tight_layout()
 plt.savefig("stocks_plot.png")
 ```
 <img width="800" height="500" alt="stocks_plot" src="https://github.com/user-attachments/assets/f46b74d0-8d50-4868-b120-859829a64be5" />
+
+
+
 ![alt text](stocks_plot-2.png)
 
 Clear labeling is crucial for interpretive accuracy, especially when the chart may be viewed out of context.
