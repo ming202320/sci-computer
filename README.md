@@ -47,7 +47,7 @@ print(summary.to_markdown())
 stocksW = stocksL.pivot(index="time", columns="stock", values="price").reset_index()
 ```
 Explanation of the Code:
-Myu code did four things, data generation, data reshaping, plotting, and summary.
+My code did four things, data generation, data reshaping, plotting, and summary.
 The script uses np.random.seed(1) to simulate prices randomly. Each call generates 10 random values drawn from a normal distribution centered around 20. The parameter after 20 sets the standard deviation, controlling how “noisy” each stock’s data will be. This models real-world conditions where different companies’ stocks experience varying levels of price fluctuation. The melt() function in pandas converts the dataset from wide format (where each column represents a different stock) into long format (where there is a single price column and a stock identifier). This structure is more flexible for plotting and analysis, especially when dealing with many categories. For plotting, Using Matplotlib, each stock’s prices are plotted as a separate line across time or date. The groupby() method (it was from R) organizes the data by stock, and each group is plotted on the same figure with a unique label. Gridlines and labels make the visualization easy to read. Finally, the code groups data by stock again and calculates minimum, maximum, mean, and standard deviation values. These provide quantitative insight into each stock’s stability.
 
 ## 2. Matplotlib Graphic
