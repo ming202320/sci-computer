@@ -69,7 +69,8 @@ plt.title("Stock Prices Over Time")
 plt.tight_layout()
 plt.savefig("stocks_plot.png")
 ```
-![alt text](stocks_plot-2.png)
+<img width="800" height="500" alt="stocks_plot" src="https://github.com/user-attachments/assets/f46b74d0-8d50-4868-b120-859829a64be5" />
+
 
 Clear labeling is crucial for interpretive accuracy, especially when the chart may be viewed out of context.
 The resulting chart presents three distinct lines, each corresponding to one simulated stock. The x-axis represents time in days, while the y-axis shows price values. The behavior of each line reflects the underlying volatility parameters.
