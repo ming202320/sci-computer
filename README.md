@@ -69,9 +69,6 @@ plt.title("Stock Prices Over Time")
 plt.tight_layout()
 plt.savefig("stocks_plot.png")
 ```
-<img width="800" height="500" alt="stocks_plot" src="https://github.com/user-attachments/assets/f46b74d0-8d50-4868-b120-859829a64be5" />
-
-
 
 ![](stocks_plot.png)
 
