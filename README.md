@@ -22,10 +22,7 @@ stocks = pd.DataFrame({
     "y": np.random.normal(20, 4, 10),
     "z": np.random.normal(20, 4, 10)
 })
-#to create a array
-x = np.array([20, 1 ,10])
-y = np.array([20, 4, 10])
-z = np.array([20, 4, 10])
+
 # Step 2: Reshape data from wide to long format
 stocksL = stocks.melt(id_vars="time", var_name="stock", value_name="price")#stocksL is a long format from dataset in R that I used 
 
