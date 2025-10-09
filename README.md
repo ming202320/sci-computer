@@ -73,7 +73,7 @@ plt.savefig("stocks_plot.png")
 
 
 
-![alt text](stocks_plot-2.png)
+![](stocks_plot.png)
 
 Clear labeling is crucial for interpretive accuracy, especially when the chart may be viewed out of context.
 The resulting chart presents three distinct lines, each corresponding to one simulated stock. The x-axis represents time in days, while the y-axis shows price values. The behavior of each line reflects the underlying volatility parameters.
