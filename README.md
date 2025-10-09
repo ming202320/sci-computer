@@ -130,7 +130,7 @@ the example of output:
 
 The table quantifies what we observed visually:
 
-Stock x has a tight range (min 18.45, max 21.51), confirming low volatility.
+Stock x has a tight range (min 17.70, max 21.51), confirming low volatility.
 
 Stocks y and z have wider ranges (roughly ±6 units around the mean), demonstrating larger fluctuations.
 
