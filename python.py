@@ -11,10 +11,6 @@ stocks = pd.DataFrame({
     "z": np.random.normal(20, 4, 10)
 })
 
-x = np.array([20, 1 ,10])
-y = np.array([20, 4, 10])
-z = np.array([20, 4, 10])
-
 stocksL = stocks.melt(id_vars="time", var_name="stock", value_name="price")
 
 plt.figure(figsize=(8, 5))
